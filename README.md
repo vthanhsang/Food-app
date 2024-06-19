@@ -51,21 +51,21 @@ Welcome to Food App! This Java-based application utilizes XML for user interface
 If you have any suggestions or bug reports, please open an issue on our GitHub repository. We welcome contributions from the community to improve Food App.
 
 ## Image of application
-#### Start
+### Start
 ![Start](image/st.jpg)
-#### Main
+### Main
 ![Main](image/main.jpg)
-#### Order
+### Order
 ![Order](image/order.jpg)
-#### Order
+### Order
 ![Order](image/chat.jpg)
-#### User
+### User
 ![User](image/user.jpg)
-#### Edit profile
+### Edit profile
 ![Edit profile](image/profile.jpg)
-#### Sign In
+### Sign In
 ![Sign In](image/dn.jpg)
-#### Sign Up
+### Sign Up
 ![Sign Up](image/dk.jpg)
 ## Author
 Food App is developed by [Your Company/Developer], with support from the open-source community and cutting-edge technologies.
