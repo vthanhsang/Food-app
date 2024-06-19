@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#b2b5b9" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/STT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/IDuser"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_weight="1"
+                android:text="ID "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/STT"
+                app:layout_constraintTop_toTopOf="@+id/STT" />
+
+            <TextView
+                android:id="@+id/Pricespp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Price"
+                android:textColor="@color/red"
+                app:layout_constraintStart_toEndOf="@+id/IDuser"
+                app:layout_constraintTop_toTopOf="@+id/IDuser" />
+
+
+            <TextView
+                android:id="@+id/Timeorder"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="23dp"
+                android:text="Date"
+                app:layout_constraintBottom_toBottomOf="@+id/Pricespp"
+                app:layout_constraintEnd_toStartOf="@+id/buttonchapnhan"
+                app:layout_constraintStart_toEndOf="@+id/Pricespp"
+                app:layout_constraintTop_toTopOf="@+id/Pricespp"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonchapnhan"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rouder_border"
+                android:text="Xác nhận"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Timeorder"
+                app:layout_constraintTop_toTopOf="@+id/Timeorder" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttoncancle"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rouder_border"
+                android:text="Hủy"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonchapnhan"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/buttonchapnhan"
+                app:layout_constraintTop_toBottomOf="@+id/buttonchapnhan" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Detail"
+                android:layout_width="129dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/orange_button"
+                android:text="Chi tiết"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/IDuser"
+                tools:layout_editor_absoluteX="286dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/additionalInfoLayoutad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/imageImage"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/foodListRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

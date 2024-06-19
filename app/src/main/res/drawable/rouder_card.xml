@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white"/> <!-- Màu nền, bạn có thể thay đổi -->
+    <corners android:radius="16dp"/> <!-- Bán kính bo tròn -->
+    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp"/> <!-- Padding bên trong -->
+</shape>

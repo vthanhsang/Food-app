@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SANFood</string>
+    <string name="avatar">Avatar</string>
+    <string name="picturefood">Food</string>
+    <string name="chatbot">Chatbot</string>
+    <string name="default_web_client_id">767181259421-u9ban1v2mb2eb1n6qdt22oi1pdgrepoh.apps.googleusercontent.com</string>
+    <string-array name="category_array">
+        <item>0.Pizza</item>
+        <item>1.Burger</item>
+        <item>2.Chicken</item>
+        <item>3.Sushi</item>
+        <item>4.Meat</item>
+        <item>5.Hotdog</item>
+        <item>6.Drink</item>
+        <item>7.More</item>
+    </string-array>
+
+
+    <string-array name="spinner_options">
+        <item>Chấp nhận</item>
+        <item>Hủy</item>
+    </string-array>
+
+
+</resources>

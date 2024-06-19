@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "767181259421",
+    "firebase_url": "https://dacn-af6b0-default-rtdb.firebaseio.com",
+    "project_id": "dacn-af6b0",
+    "storage_bucket": "dacn-af6b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767181259421:android:3fe3686a77dcd07b8f0a74",
+        "android_client_info": {
+          "package_name": "com.example.btck1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767181259421-u9ban1v2mb2eb1n6qdt22oi1pdgrepoh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btck1",
+            "certificate_hash": "ae91c89ca4b8229c32064f16ab725586962e5d20"
+          }
+        },
+        {
+          "client_id": "767181259421-vlthvtboqopfg8m71ii9mi27avus6ii8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY-v10afTiIrxiHz5LfARx4_Aobhb7ql4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767181259421-vlthvtboqopfg8m71ii9mi27avus6ii8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

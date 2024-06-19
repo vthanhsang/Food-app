@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+
+    android:background="@drawable/rounded_border_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <View-->
+<!--            android:id="@+id/view1"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#b2b5b9" />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:padding="16dp">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/STT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_weight="1"
+                android:text="ID "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/STT"
+                app:layout_constraintTop_toTopOf="@+id/STT" />
+
+            <TextView
+                android:id="@+id/Priceor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Price"
+                android:textColor="@color/red"
+                app:layout_constraintStart_toEndOf="@+id/ID"
+                app:layout_constraintTop_toTopOf="@+id/ID" />
+
+            <TextView
+                android:id="@+id/Timeorder"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:text="Date"
+                app:layout_constraintStart_toEndOf="@+id/Priceor"
+                app:layout_constraintTop_toTopOf="@+id/Priceor" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView23"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="24dp"-->
+            <!--                android:text="TextView"-->
+            <!--                app:layout_constraintEnd_toEndOf="@+id/imageImage"-->
+            <!--                app:layout_constraintHorizontal_bias="0.621"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/STT"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/ID" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/soluong"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:text="2"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/imageImage"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/textView26"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView26" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageImage"-->
+            <!--                android:layout_width="100dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:layout_marginBottom="16dp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/ID"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView23"-->
+            <!--                app:layout_constraintVertical_bias="0.029" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView26"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:text="Số lượng"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/imageImage"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/Priceor"-->
+            <!--                app:layout_constraintVertical_bias="0.326" />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_background"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Chưa xác nhận"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Timeorder"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Detailorder"
+                android:layout_width="129dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/orange_button"
+                android:text="Chi tiết"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ID" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/additionalInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/imageImage"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/foodListRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#b2b5b9" />-->
+    </LinearLayout>
+
+
+    <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/STT"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="16dp"-->
+    <!--                    android:text="STT"-->
+    <!--                    app:layout_constraintBottom_toBottomOf="@+id/ID"-->
+    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+    <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/ID"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="16dp"-->
+    <!--                    android:text="ID "-->
+    <!--                    app:layout_constraintStart_toEndOf="@+id/STT"-->
+    <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/Name"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="16dp"-->
+    <!--                    android:text="Name Food"-->
+    <!--                    app:layout_constraintBottom_toBottomOf="@+id/ID"-->
+    <!--                    app:layout_constraintStart_toEndOf="@+id/ID" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/Pricee"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="16dp"-->
+    <!--                    android:text="Price"-->
+    <!--                    app:layout_constraintBottom_toBottomOf="@+id/Name"-->
+    <!--                    app:layout_constraintStart_toEndOf="@+id/Name" />-->
+    <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--    </LinearLayout>-->
+</ScrollView>
