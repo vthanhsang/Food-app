@@ -54,6 +54,7 @@ If you have any suggestions or bug reports, please open an issue on our GitHub r
 ![Start](image/st.jpg)
 ![Main](image/main.jpg)
 ![Order](image/order.jpg)
+![Chat](image/chat.jpg)
 ![User](image/user.jpg)
 ![Edit profile](image/profile.jpg)
 ![Sign In](image/dn.jpg)
