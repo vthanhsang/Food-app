@@ -68,6 +68,6 @@ If you have any suggestions or bug reports, please open an issue on our GitHub r
 ### Sign Up
 ![Sign Up](image/dk.jpg)
 ## Author
-Food App is developed by [Your Company/Developer], with support from the open-source community and cutting-edge technologies.
+Food App is developed by Võ Thanh Sang, with support from the open-source community and cutting-edge technologies.
 
 Thank you for your interest in and usage of Food App. We hope you have an enjoyable and convenient shopping experience! 🍲📱
